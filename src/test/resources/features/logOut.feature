@@ -1,5 +1,5 @@
 @SEAMLES-1921
-Feature: Default
+Feature: Log out Function
 
 	Background:
 		#@SEAMLES-1920
@@ -7,7 +7,7 @@ Feature: Default
 		And User enters valid username
 		And User enters valid password
 		And User clicks login button
-		Then User lands on home page
+		Then User lands on files module page
 
 	@SEAMLES-1919
 	Scenario: TC 001 - Verify that user can log out and ends up in login page [AutomationS3-ÜTB]
