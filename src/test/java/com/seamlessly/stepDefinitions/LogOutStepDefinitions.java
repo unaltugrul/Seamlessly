@@ -8,10 +8,9 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
 
-public class logOutStepDefinitions {
+public class LogOutStepDefinitions {
 
     LoginPage loginPage = new LoginPage();
     BasePage basePage = new BasePage();
@@ -38,8 +37,8 @@ public class logOutStepDefinitions {
 
     @Then("User lands on files module page")
     public void userLandsOnFilesModulePage() {
-        String actualTitle = Driver.getDriver().getTitle();
         String expectedTitle = "Files - Seamlessly -QA";
+        String actualTitle = Driver.getDriver().getTitle();
         Assert.assertEquals(actualTitle,expectedTitle);
     }
 
