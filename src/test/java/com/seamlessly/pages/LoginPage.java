@@ -22,6 +22,23 @@ public class LoginPage {
 
     @FindBy(xpath = "//div[@class='logo']")
     public WebElement loginPagelogo;
+
+    @FindBy(xpath = "//a[@href='#']")
+    public WebElement eyeLink;
+
+    @FindBy(id = "lost-password")
+    public WebElement forgotPasswordLink;
+
+    @FindBy(id = "reset-password-submit")
+    public WebElement resetPasswordButton;
+
+
+    
+    
+
+
+
+
     
     
 }
