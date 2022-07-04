@@ -6,6 +6,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 
@@ -13,6 +14,11 @@ import java.util.Map;
 
 public class LogInStepDefinitions {
     LoginPage loginPage = new LoginPage();
+
+    @Before
+    public void userOnTheLoginPage(){
+
+    }
 
     @And("User enters valid username {string}")
     public void user_enters_valid_username(String string) {
