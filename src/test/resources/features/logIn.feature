@@ -31,8 +31,8 @@ Feature: Default
 			And User enters invalid username
 		      | username | EmployeeABC |
 		    And User enters invalid password
-		      | password | Employee123 |
-		    And User clicks login button
+				| password | Employee12 |
+		And User clicks login button
 		    Then User can not log in	
 
 
@@ -74,5 +74,5 @@ Feature: Default
 
 	@SEAMLES-1931
 	Scenario: TC_009-Verify that user can see valid placeholders on Username and Password fields [AutomationS3-ÜTB]
-			Given User on the login page
+
 		    Then User should be able to see valid placeholders
