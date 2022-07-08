@@ -13,7 +13,6 @@ import org.junit.Assert;
 public class LogOutStepDefinitions {
 
     LoginPage loginPage = new LoginPage();
-    BasePage basePage = new BasePage();
 
     @Given("User on the login page")
     public void userOnTheLoginPage() {
@@ -44,12 +43,12 @@ public class LogOutStepDefinitions {
 
     @When("User clicks profile avatar image")
     public void userClicksProfileAvatarImage() {
-        basePage.profileAvatar.click();
+        loginPage.profileAvatar.click();
     }
 
     @And("User clicks Log out link from opened menu")
     public void userClicksLogOutLinkFromOpenedMenu() {
-        basePage.logOutLink.click();
+        loginPage.logOutLink.click();
     }
 
     @Then("Log in page should be displayed")
