@@ -34,8 +34,8 @@ public class LogOutStepDefinitions {
         loginPage.logInButton.click();
     }
 
-    @Then("User lands on files module page")
-    public void userLandsOnFilesModulePage() {
+    @Then("User lands on dashboard module page")
+    public void userLandsOnDashboardModulePage() {
         String expectedTitle = "Dashboard - Seamlessly";
         String actualTitle = Driver.getDriver().getTitle();
         Assert.assertEquals(actualTitle,expectedTitle);
@@ -46,8 +46,8 @@ public class LogOutStepDefinitions {
         loginPage.profileAvatar.click();
     }
 
-    @And("User clicks Log out link from opened menu")
-    public void userClicksLogOutLinkFromOpenedMenu() {
+    @And("User clicks Log out link from dropdown menu")
+    public void userClicksLogOutLinkFromDropdownMenu(){
         loginPage.logOutLink.click();
     }
 
