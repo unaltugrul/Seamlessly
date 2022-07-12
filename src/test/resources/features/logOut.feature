@@ -1,5 +1,5 @@
 @SEAMLES-1921
-Feature: Default
+Feature: Log out function
 
 	Background:
 		#@SEAMLES-1920
