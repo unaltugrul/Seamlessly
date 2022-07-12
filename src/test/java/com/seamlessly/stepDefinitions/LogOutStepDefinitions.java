@@ -36,7 +36,7 @@ public class LogOutStepDefinitions {
 
     @Then("User lands on files module page")
     public void userLandsOnFilesModulePage() {
-        String expectedTitle = "Files - Seamlessly -QA";
+        String expectedTitle = "Dashboard - Seamlessly";
         String actualTitle = Driver.getDriver().getTitle();
         Assert.assertEquals(actualTitle,expectedTitle);
     }

@@ -14,7 +14,7 @@ public abstract class BasePage {
     @FindBy(xpath = "(//li[@data-id='files']//a)[1]")
     public WebElement filesModuleLink;
 
-    @FindBy(xpath = "//img[@width='32']")
+    @FindBy(xpath = "//div[@id='expand']//img")
     public WebElement profileAvatar;
 
     @FindBy(xpath = "//li[@data-id='logout']//a")

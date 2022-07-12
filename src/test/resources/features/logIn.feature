@@ -1,5 +1,5 @@
 @SEAMLES-1947
-Feature: Default
+Feature: Login Function
 
 	Background:
 		#@SEAMLES-1946
@@ -74,5 +74,4 @@ Feature: Default
 
 	@SEAMLES-1931
 	Scenario: TC_009-Verify that user can see valid placeholders on Username and Password fields [AutomationS3-ÜTB]
-
 		    Then User should be able to see valid placeholders

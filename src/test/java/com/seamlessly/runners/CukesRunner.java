@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         glue = "com/seamlessly/stepDefinitions",
         publish = true,
         dryRun = false,
-        tags = "@SEAMLES-1947"
+        tags = "@SEAMLES-1921"
 )
 public class CukesRunner {
 
