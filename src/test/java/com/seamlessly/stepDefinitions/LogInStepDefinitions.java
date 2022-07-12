@@ -44,9 +44,9 @@ public class LogInStepDefinitions {
     }
     @Then("User can not log in")
     public void user_can_not_log_in() {
-        String expectedTitle = "Seamlessly -QA";
+        String expectedTitle = "Seamlessly";
         String actualTitle = Driver.getDriver().getTitle();
-        Assert.assertEquals(actualTitle,expectedTitle);
+        Assert.assertEquals(expectedTitle,actualTitle);
     }
 
     @Then("User should be able to see the error message on input box as expected")
